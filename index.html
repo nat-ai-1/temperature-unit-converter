@@ -1,0 +1,35 @@
+<head>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="frontend.css">
+</head>
+<body>
+  <div class="container">
+    <h1>แปลงหน่วยอุณหภูมิ</h1>
+    <form id="convertForm">
+      <div>
+        <label for="temperature">ป้อนอุณภูมิที่ต้องการ:</label>
+        <input type="number" id="temperature" name="temperature" required>
+      </div>
+      <div>
+        <label for="fromUnit">จาก:</label>
+        <select id="fromUnit" name="fromUnit">
+          <option value="Celsius">°C</option>
+          <option value="Fahrenheit"> °F </option>
+          <option value="Kelvin"> K</option>
+        </select>
+      </div>
+      <div>
+        <label for="toUnit">เป็น:</label>
+        <select id="toUnit" name="toUnit">
+          <option value="Celsius">°C</option>
+          <option value="Fahrenheit"> °F </option>
+          <option value="Kelvin"> K</option>
+        </select>
+      </div>
+      <button type="button" id="convertButton">แปลงหน่วย</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="back.js"></script>
+</body>
+</html>
